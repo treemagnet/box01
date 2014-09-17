@@ -1,0 +1,79 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="23" inline="true" x="1" y="1">
+    <field name="VAR">i</field>
+    <value name="VALUE">
+      <block type="math_number" id="30">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_whileUntil" id="36" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="42" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="variables_get" id="47">
+                <field name="VAR">i</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="54">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="63">
+            <next>
+              <block type="robot_delay" id="65" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="72">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_right" id="90">
+                    <next>
+                      <block type="robot_delay" id="91" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="92">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="97" inline="true">
+                            <field name="VAR">i</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="104" inline="true">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <block type="variables_get" id="109">
+                                    <field name="VAR">i</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="116">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="125"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
