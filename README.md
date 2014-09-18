@@ -1,7 +1,7 @@
 box01
 =================
 
-Draw a square using the Jade Robot.  Move Forwards and Turn Right and repeat Four Times.  
+Draw a square using the Jade Robot.  Move Forwards for one second, then Turn Right for one second, repeat these two actions four times before stopping.  
 
 ### Project Information
 ```
@@ -12,7 +12,7 @@ Firmware          : 41
 ```
 
 ### Release History:
-2014.09.15 - Initial Release
+2014.09.15 - Initial Release.
 
 ### Copyright (c) 2014 Mimetics Inc.
 All Rights Reserved
