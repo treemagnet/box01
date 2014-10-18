@@ -8,7 +8,7 @@ Draw a square using the Jade Robot.  Move Forwards for one second, then Turn Rig
 Type              : Scratch
 Version           : 01.0
 Author            : myke predko
-Firmware          : 41
+Firmware          : 42
 ```
 
 ### Release History:
