@@ -76,5 +76,4 @@
       </block>
     </next>
   </block>
-  <block type="robot_delay" id="29" inline="true" x="238" y="351"></block>
 </xml>
