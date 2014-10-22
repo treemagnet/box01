@@ -73,7 +73,7 @@
                   </block>
                 </statement>
                 <next>
-                  <block type="movement_forward" id="67">
+                  <block type="movement_forward" id="67" disabled="true">
                     <next>
                       <block type="robot_delay" id="70" inline="true">
                         <value name="DELAY">
@@ -87,12 +87,12 @@
                               <block type="oled_setcursor" id="102" inline="true">
                                 <value name="STARTX">
                                   <block type="math_number" id="113">
-                                    <field name="NUM">10</field>
+                                    <field name="NUM">20</field>
                                   </block>
                                 </value>
                                 <value name="STARTY">
                                   <block type="math_number" id="120">
-                                    <field name="NUM">20</field>
+                                    <field name="NUM">40</field>
                                   </block>
                                 </value>
                                 <next>
