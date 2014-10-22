@@ -106,7 +106,25 @@
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="oled_cleardisplay" id="130"></block>
+                                          <block type="oled_cleardisplay" id="130">
+                                            <next>
+                                              <block type="oled_drawtext" id="131">
+                                                <field name="TEXT">GOOD BY</field>
+                                                <next>
+                                                  <block type="robot_delay" id="132" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="133">
+                                                        <field name="NUM">2000</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_cleardisplay" id="134"></block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
                                         </next>
                                       </block>
                                     </next>
