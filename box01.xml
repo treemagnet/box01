@@ -73,7 +73,7 @@
                   </block>
                 </statement>
                 <next>
-                  <block type="movement_forward" id="67" disabled="true">
+                  <block type="movement_forward" id="67" collapsed="true" disabled="true">
                     <next>
                       <block type="robot_delay" id="70" inline="true">
                         <value name="DELAY">
@@ -98,6 +98,18 @@
                                 <next>
                                   <block type="oled_drawtext" id="80">
                                     <field name="TEXT">HELLO THIS WORKS</field>
+                                    <next>
+                                      <block type="robot_delay" id="122" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="129">
+                                            <field name="NUM">2000</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_cleardisplay" id="130"></block>
+                                        </next>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
