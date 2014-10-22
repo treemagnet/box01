@@ -7,20 +7,22 @@
             <field name="NUM">1000</field>
           </block>
         </value>
-      </block>
-    </next>
-  </block>
-  <block type="led_select" id="362" inline="true" x="-126" y="121">
-    <field name="ACTION">FLASH</field>
-    <value name="LED">
-      <block type="math_number" id="369">
-        <field name="NUM">2</field>
-      </block>
-    </value>
-    <next>
-      <block type="oled_cleardisplay" id="353">
         <next>
-          <block type="movement_stop" id="333"></block>
+          <block type="led_select" id="362" inline="true">
+            <field name="ACTION">FLASH</field>
+            <value name="LED">
+              <block type="math_number" id="369">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_cleardisplay" id="353">
+                <next>
+                  <block type="movement_stop" id="333"></block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
