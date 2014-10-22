@@ -83,7 +83,7 @@
                       <block type="movement_stop" id="15">
                         <next>
                           <block type="oled_drawtext" id="80">
-                            <field name="TEXT">a</field>
+                            <field name="TEXT">HELLO THIS WORKS</field>
                           </block>
                         </next>
                       </block>
