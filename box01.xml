@@ -8,40 +8,66 @@
           </block>
         </value>
         <next>
-          <block type="controls_whileUntil" id="4" inline="false">
-            <field name="MODE">WHILE</field>
-            <value name="NUMBER">
-              <block type="logic_compare" id="16" inline="true">
-                <field name="OP">LTE</field>
-                <value name="A">
-                  <block type="variables_get" id="19">
-                    <field name="VAR">i</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="26">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
+          <block type="variables_set" id="4" inline="true">
+            <field name="VAR">i</field>
+            <value name="VALUE">
+              <block type="math_number" id="5">
+                <field name="NUM">0</field>
               </block>
             </value>
-            <statement name="DO">
-              <block type="led_select" id="5" inline="true">
-                <field name="ACTION">FLASH</field>
-                <value name="LED">
-                  <block type="math_number" id="6">
-                    <field name="NUM">2</field>
+            <next>
+              <block type="controls_whileUntil" id="6" inline="false">
+                <field name="MODE">WHILE</field>
+                <value name="NUMBER">
+                  <block type="logic_compare" id="7" inline="true">
+                    <field name="OP">LTE</field>
+                    <value name="A">
+                      <block type="variables_get" id="8">
+                        <field name="VAR">i</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="9">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
-                <next>
-                  <block type="oled_cleardisplay" id="7">
+                <statement name="DO">
+                  <block type="led_select" id="10" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="11">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="movement_stop" id="8"></block>
+                      <block type="variables_set" id="18" inline="true">
+                        <field name="VAR">i</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="25" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="variables_get" id="30">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="37">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_stop" id="13"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
-                </next>
+                </statement>
               </block>
-            </statement>
+            </next>
           </block>
         </next>
       </block>
