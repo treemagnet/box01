@@ -9,26 +9,16 @@
         </value>
         <next>
           <block type="led_select" id="362" inline="true">
-            <field name="ACTION">ON</field>
+            <field name="ACTION">OFF</field>
             <value name="LED">
               <block type="math_number" id="369">
                 <field name="NUM">2</field>
               </block>
             </value>
             <next>
-              <block type="led_select" id="378" inline="true">
-                <field name="ACTION">FLASH</field>
-                <value name="LED">
-                  <block type="math_number" id="385">
-                    <field name="NUM">2</field>
-                  </block>
-                </value>
+              <block type="oled_cleardisplay" id="353">
                 <next>
-                  <block type="oled_cleardisplay" id="353">
-                    <next>
-                      <block type="movement_stop" id="333"></block>
-                    </next>
-                  </block>
+                  <block type="movement_stop" id="333"></block>
                 </next>
               </block>
             </next>
