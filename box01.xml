@@ -57,6 +57,16 @@
                         </value>
                       </block>
                     </value>
+                    <next>
+                      <block type="led_select" id="16" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="math_number" id="17">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
