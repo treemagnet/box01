@@ -58,25 +58,12 @@
                       </block>
                     </value>
                     <next>
-                      <block type="robot_delay" id="56" inline="true" disabled="true">
+                      <block type="robot_delay" id="56" inline="true">
                         <value name="DELAY">
                           <block type="math_number" id="57">
                             <field name="NUM">1000</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="movement_forward" id="55">
-                            <next>
-                              <block type="robot_delay" id="19" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="26">
-                                    <field name="NUM">250</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
