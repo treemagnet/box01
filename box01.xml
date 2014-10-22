@@ -64,6 +64,9 @@
                             <field name="NUM">1000</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="movement_stutter" id="36"></block>
+                        </next>
                       </block>
                     </next>
                   </block>
