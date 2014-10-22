@@ -80,7 +80,13 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="15"></block>
+                      <block type="movement_stop" id="15">
+                        <next>
+                          <block type="oled_drawtext" id="80">
+                            <field name="TEXT">a</field>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
