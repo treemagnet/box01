@@ -84,8 +84,22 @@
                         <next>
                           <block type="movement_stop" id="15">
                             <next>
-                              <block type="oled_drawtext" id="80">
-                                <field name="TEXT">HELLO THIS WORKS</field>
+                              <block type="oled_setcursor" id="102" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="113">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="120">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawtext" id="80">
+                                    <field name="TEXT">HELLO THIS WORKS</field>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
