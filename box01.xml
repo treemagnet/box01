@@ -10,11 +10,6 @@
         <next>
           <block type="controls_whileUntil" id="13" inline="false">
             <field name="MODE">WHILE</field>
-            <value name="NUMBER">
-              <block type="math_arithmetic" id="20" inline="true">
-                <field name="OP">ADD</field>
-              </block>
-            </value>
             <statement name="DO">
               <block type="led_select" id="4" inline="true">
                 <field name="ACTION">FLASH</field>
