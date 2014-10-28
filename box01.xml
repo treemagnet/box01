@@ -168,7 +168,7 @@
                                                                                       <block type="oled_setcursor" id="139" inline="true">
                                                                                         <value name="STARTX">
                                                                                           <block type="math_number" id="140">
-                                                                                            <field name="NUM">10</field>
+                                                                                            <field name="NUM">5</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="STARTY">
@@ -180,10 +180,24 @@
                                                                                           <block type="oled_drawtext" id="142">
                                                                                             <field name="TEXT">YOUR BATTRY LEVEL IS</field>
                                                                                             <next>
-                                                                                              <block type="oled_drawnumber" id="138" inline="true">
-                                                                                                <value name="NUMBER">
-                                                                                                  <block type="sensor_battery" id="129"></block>
+                                                                                              <block type="oled_setcursor" id="143" inline="true">
+                                                                                                <value name="STARTX">
+                                                                                                  <block type="math_number" id="144">
+                                                                                                    <field name="NUM">40</field>
+                                                                                                  </block>
                                                                                                 </value>
+                                                                                                <value name="STARTY">
+                                                                                                  <block type="math_number" id="145">
+                                                                                                    <field name="NUM">40</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="oled_drawnumber" id="138" inline="true">
+                                                                                                    <value name="NUMBER">
+                                                                                                      <block type="sensor_battery" id="129"></block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
