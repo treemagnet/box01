@@ -196,6 +196,22 @@
                                                                                                     <value name="NUMBER">
                                                                                                       <block type="sensor_battery" id="129"></block>
                                                                                                     </value>
+                                                                                                    <next>
+                                                                                                      <block type="robot_delay" id="154" inline="true">
+                                                                                                        <value name="DELAY">
+                                                                                                          <block type="math_number" id="161">
+                                                                                                            <field name="NUM">1000</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="oled_cleardisplay" id="176">
+                                                                                                            <next>
+                                                                                                              <block type="movement_stop" id="186"></block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
                                                                                                   </block>
                                                                                                 </next>
                                                                                               </block>
