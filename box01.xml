@@ -163,7 +163,15 @@
                                                                                   </block>
                                                                                 </value>
                                                                                 <next>
-                                                                                  <block type="oled_cleardisplay" id="34"></block>
+                                                                                  <block type="oled_cleardisplay" id="34">
+                                                                                    <next>
+                                                                                      <block type="oled_drawnumber" id="138" inline="true">
+                                                                                        <value name="NUMBER">
+                                                                                          <block type="sensor_battery" id="129"></block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
                                                                                 </next>
                                                                               </block>
                                                                             </next>
