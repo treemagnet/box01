@@ -196,6 +196,18 @@
                                                                                                     <value name="NUMBER">
                                                                                                       <block type="sensor_battery" id="129"></block>
                                                                                                     </value>
+                                                                                                    <next>
+                                                                                                      <block type="robot_delay" id="146" inline="true">
+                                                                                                        <value name="DELAY">
+                                                                                                          <block type="math_number" id="147">
+                                                                                                            <field name="NUM">2000</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="oled_cleardisplay" id="148"></block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
                                                                                                   </block>
                                                                                                 </next>
                                                                                               </block>
