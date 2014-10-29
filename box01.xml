@@ -121,7 +121,7 @@
                                               <block type="oled_drawtext" id="31">
                                                 <field name="TEXT">FORWARD 1</field>
                                                 <next>
-                                                  <block type="movement_reverse" id="94">
+                                                  <block type="movement_reverse" id="32">
                                                     <next>
                                                       <block type="robot_delay" id="33" inline="true">
                                                         <value name="DELAY">
@@ -204,23 +204,23 @@
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <next>
-                                                                                                          <block type="movement_leftmotor" id="67" inline="true">
+                                                                                                          <block type="movement_leftmotor" id="57" inline="true">
                                                                                                             <value name="MOVLEFT">
-                                                                                                              <block type="math_number" id="74">
+                                                                                                              <block type="math_number" id="58">
                                                                                                                 <field name="NUM">50</field>
                                                                                                               </block>
                                                                                                             </value>
                                                                                                             <next>
-                                                                                                              <block type="robot_delay" id="95" inline="true">
+                                                                                                              <block type="robot_delay" id="59" inline="true">
                                                                                                                 <value name="DELAY">
-                                                                                                                  <block type="math_number" id="96">
+                                                                                                                  <block type="math_number" id="60">
                                                                                                                     <field name="NUM">3000</field>
                                                                                                                   </block>
                                                                                                                 </value>
                                                                                                                 <next>
-                                                                                                                  <block type="movement_forward" id="106">
+                                                                                                                  <block type="movement_forward" id="61">
                                                                                                                     <next>
-                                                                                                                      <block type="oled_cleardisplay" id="57"></block>
+                                                                                                                      <block type="oled_cleardisplay" id="62"></block>
                                                                                                                     </next>
                                                                                                                   </block>
                                                                                                                 </next>
