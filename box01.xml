@@ -204,7 +204,16 @@
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <next>
-                                                                                                          <block type="oled_cleardisplay" id="57"></block>
+                                                                                                          <block type="movement_leftmotor" id="67" inline="true">
+                                                                                                            <value name="MOVLEFT">
+                                                                                                              <block type="math_number" id="74">
+                                                                                                                <field name="NUM">1000</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="oled_cleardisplay" id="57"></block>
+                                                                                                            </next>
+                                                                                                          </block>
                                                                                                         </next>
                                                                                                       </block>
                                                                                                     </next>
